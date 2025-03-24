@@ -17,7 +17,7 @@ const ArrowDownIcon: React.FC<IconProps> = ({
         className={`icon ${className} ${color ? `icon-${color}` : ''}`}
         width={width}
         height={height}
-        viewBox="0 0 20 11"
+        viewBox={`0 0 ${width} ${height}`}
         fill="currentColor"
         xmlns="http://www.w3.org/2000/svg"
         {...props}
