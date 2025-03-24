@@ -1,0 +1,64 @@
+.checkbox {
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.checkbox__input {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+  margin: 0;
+}
+
+.checkbox__custom {
+  width: 40px;
+  height: 40px;
+  border: 1px solid var(--checkbox-border);
+  background: var(--checkbox-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Hover для неотмеченного и активного чекбокса */
+.checkbox:not(.checkbox--disabled):hover .checkbox__custom {
+  background: var(--checkbox-bg-hover);
+  border: 1px solid var(--checkbox-border-hover);
+}
+
+/* Состояние checked */
+.checkbox--checked .checkbox__custom {
+
+
+}
+
+/* Disabled состояния */
+.checkbox--disabled {
+  cursor: not-allowed;
+}
+
+.checkbox--disabled .checkbox__custom {
+  background: rgba(255, 255, 255, 0.5);
+
+  border: 1px solid rgba(255, 255, 255, 1);
+}
+
+.checkbox--disabled.checkbox--checked .checkbox__custom {
+  background: rgba(255, 255, 255, 0.5);
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+.checkbox__icon {
+  /* width: 24px;
+  height: 24px; */
+  /* color: var(--checkbox-icon-color); */
+  flex-shrink: 0;
+}
+
+/* Цвет иконки для disabled состояния */
+.checkbox--disabled .checkbox__icon {
+  color: var(--checkbox-icon-disabled-color);
+}

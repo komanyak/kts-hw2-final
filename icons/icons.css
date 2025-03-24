@@ -1,0 +1,17 @@
+.icon{
+  fill: currentColor;
+  stroke: currentColor;
+}
+
+.icon-primary {
+  fill: var(--text-primary);
+  stroke: var(--text-primary);
+}
+.icon-secondary {
+  fill: var(--text-secondary);
+  stroke:  var(--text-secondary);
+}
+.icon-accent {
+  fill: var(--text-accent);
+  stroke: var(--text-accent);
+}

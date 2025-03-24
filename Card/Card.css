@@ -1,0 +1,98 @@
+.card {
+  font-family: Roboto;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--card-bg);
+  overflow: hidden;
+  max-width: 360px;
+  box-sizing: border-box;
+}
+
+.card:hover {
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+}
+
+/* Блок изображения */
+
+.card-image {
+  width: 100%;
+  position: relative;
+  padding-top: 100%; /* Соотношение 16:9 (подстройте под ваши нужды) */
+  overflow: hidden;
+  background-color: var(--card-image-bg);
+  margin-bottom: 24px;
+}
+
+.card-image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* Полное вписывание без обрезки */
+}
+
+/* Контент карточки */
+.card-body {
+  font-family: Roboto;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  padding: 0 12px;
+  gap: 8px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.caption-slot {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0%;
+  color: var(--text-secondary);
+}
+
+.card-title {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  color: var(--text-primary);
+}
+
+.card-subtitle {
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0%;
+  color: var(--text-secondary);
+}
+
+/* Футер */
+.card-footer {
+  font-family: Roboto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 12px;
+  padding-top: 20px;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+.card-content-slot {
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0%;
+  color: var(--text-primary);
+}
+
+.card-action {
+  display: flex;
+  align-items: center;
+}

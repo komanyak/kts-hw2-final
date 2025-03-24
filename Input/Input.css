@@ -1,0 +1,50 @@
+.input-wrapper {
+  display: flex;
+  align-items: center;
+  background: var(--input-bg);
+  /* width: 300px; */
+  height: 52px;
+  border: 1px solid var(--input-border);
+  gap: 8px;
+  padding: 14px 12px;
+  justify-content: space-between;
+}
+
+/* Состояние фокуса */
+.input-wrapper:focus-within {
+  border: 1px solid var(--brand, rgba(81, 133, 129, 1));
+}
+
+/* Заблокированное состояние */
+.input-wrapper:has(.input-field:disabled) {
+  background: rgba(255, 255, 255, 1);
+  border: 1px solid rgba(255, 255, 255, 1);
+}
+
+/* Плейсхолдер */
+.input-field::placeholder {
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0%;
+  color: rgba(175, 173, 181, 1);
+}
+
+/* Поле ввода */
+.input-field {
+  height: 20px;
+  flex: 1;
+
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 16px;
+}
+
+/* Иконка */
+.input-icon {
+  display: flex;
+  align-items: center;
+  margin-left: 8px;
+}
