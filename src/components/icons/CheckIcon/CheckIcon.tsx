@@ -4,6 +4,7 @@ import { ReactComponent as CheckIconSVG } from './CheckIcon.svg';
 import '../../variables.css';
 import '../icons.css';
 
+
 const CheckIcon: React.FC<IconProps> = ({
   className = '',
   color,

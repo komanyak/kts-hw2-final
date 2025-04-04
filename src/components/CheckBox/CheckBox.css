@@ -2,7 +2,7 @@
   display: inline-flex;
   align-items: center;
   position: relative;
-  cursor: pointer;
+
 }
 
 .checkbox__input {
@@ -18,10 +18,11 @@
   height: 40px;
   border: 1px solid var(--checkbox-border);
   background: var(--checkbox-bg);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+ 
+
 }
+
+
 
 /* Hover для неотмеченного и активного чекбокса */
 .checkbox:not(.checkbox--disabled):hover .checkbox__custom {
@@ -29,11 +30,7 @@
   border: 1px solid var(--checkbox-border-hover);
 }
 
-/* Состояние checked */
-.checkbox--checked .checkbox__custom {
 
-
-}
 
 /* Disabled состояния */
 .checkbox--disabled {
